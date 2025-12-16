@@ -1,6 +1,7 @@
 import type { FC } from 'react';
 import React, { useMemo } from 'react';
 import { useControlledState } from '@rc-component/util';
+import ConfigProvider from 'antd/es/config-provider';
 
 import Select from '../../select';
 import type { DefaultOptionType } from '../../select';
@@ -55,22 +56,26 @@ const ColorInput: FC<ColorInputProps> = (props) => {
   return (
     <div className={`${colorInputPrefixCls}-container`}>
       {!disabledFormat && (
-        <Select
-          value={colorFormat}
-          variant="borderless"
-          getPopupContainer={(current) => current}
-          popupMatchSelectWidth={68}
-          placement="bottomRight"
-          onChange={triggerFormatChange}
-          className={`${prefixCls}-format-select`}
-          size="small"
-          options={selectOptions}
-        />
+        <ConfigProvider theme={{ token: { paddingXXS: 0, paddingXS: 0, marginXS: 4 } }}>
+          <Select
+            value={colorFormat}
+            variant="borderless"
+            getPopupContainer={(current) => current}
+            popupMatchSelectWidth={68}
+            placement="bottomRight"
+            onChange={triggerFormatChange}
+            className={`${prefixCls}-format-select`}
+            size="small"
+            options={selectOptions}
+          />
+        </ConfigProvider>
       )}
-      <div className={colorInputPrefixCls}>{steppersNode}</div>
-      {!disabledAlpha && (
-        <ColorAlphaInput prefixCls={prefixCls} value={value} onChange={onChange} />
-      )}
+      <ConfigProvider theme={{ components: { InputNumber: { handleWidth: 12 } } }}>
+        <div className={colorInputPrefixCls}>{steppersNode}</div>
+        {!disabledAlpha && (
+          <ColorAlphaInput prefixCls={prefixCls} value={value} onChange={onChange} />
+        )}
+      </ConfigProvider>
     </div>
   );
 };

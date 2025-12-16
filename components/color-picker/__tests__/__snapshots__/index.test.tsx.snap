@@ -140,7 +140,7 @@ exports[`ColorPicker Should panelRender work 1`] = `
                 class="ant-color-picker-input-container"
               >
                 <div
-                  class="ant-select ant-select-sm ant-select-borderless ant-color-picker-format-select css-var-root ant-select-css-var ant-select-single ant-select-show-arrow"
+                  class="ant-select ant-select-sm ant-select-borderless ant-color-picker-format-select css-var-test-id ant-select-css-var ant-select-single ant-select-show-arrow"
                 >
                   <div
                     class="ant-select-content"
@@ -193,7 +193,7 @@ exports[`ColorPicker Should panelRender work 1`] = `
                   class="ant-color-picker-input"
                 >
                   <span
-                    class="ant-input-affix-wrapper ant-input-affix-wrapper-sm ant-input-outlined ant-color-picker-hex-input css-var-root ant-input-css-var"
+                    class="ant-input-affix-wrapper ant-input-affix-wrapper-sm ant-input-outlined ant-color-picker-hex-input css-var-test-id ant-input-css-var"
                   >
                     <span
                       class="ant-input-prefix"
@@ -208,7 +208,7 @@ exports[`ColorPicker Should panelRender work 1`] = `
                   </span>
                 </div>
                 <div
-                  class="ant-input-number ant-input-number-mode-input css-var-root ant-input-number-css-var ant-color-picker-steppers ant-color-picker-alpha-input ant-input-number-outlined ant-input-number-sm"
+                  class="ant-input-number ant-input-number-mode-input css-var-test-id ant-input-number-css-var ant-color-picker-steppers ant-color-picker-alpha-input ant-input-number-outlined ant-input-number-sm"
                 >
                   <input
                     aria-valuemax="100"
@@ -414,7 +414,7 @@ exports[`ColorPicker Should panelRender work 2`] = `
               class="ant-color-picker-input-container"
             >
               <div
-                class="ant-select ant-select-sm ant-select-borderless ant-color-picker-format-select css-var-root ant-select-css-var ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-select-borderless ant-color-picker-format-select css-var-test-id ant-select-css-var ant-select-single ant-select-show-arrow"
               >
                 <div
                   class="ant-select-content"
@@ -467,7 +467,7 @@ exports[`ColorPicker Should panelRender work 2`] = `
                 class="ant-color-picker-input"
               >
                 <span
-                  class="ant-input-affix-wrapper ant-input-affix-wrapper-sm ant-input-outlined ant-color-picker-hex-input css-var-root ant-input-css-var"
+                  class="ant-input-affix-wrapper ant-input-affix-wrapper-sm ant-input-outlined ant-color-picker-hex-input css-var-test-id ant-input-css-var"
                 >
                   <span
                     class="ant-input-prefix"
@@ -482,7 +482,7 @@ exports[`ColorPicker Should panelRender work 2`] = `
                 </span>
               </div>
               <div
-                class="ant-input-number ant-input-number-mode-input css-var-root ant-input-number-css-var ant-color-picker-steppers ant-color-picker-alpha-input ant-input-number-outlined ant-input-number-sm"
+                class="ant-input-number ant-input-number-mode-input css-var-test-id ant-input-number-css-var ant-color-picker-steppers ant-color-picker-alpha-input ant-input-number-outlined ant-input-number-sm"
               >
                 <input
                   aria-valuemax="100"
